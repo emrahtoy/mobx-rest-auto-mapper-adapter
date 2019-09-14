@@ -1,0 +1,35 @@
+{
+  "name": "mobx-rest-auto-mapper-adapter",
+  "version": "1.0.0",
+  "description": "Auto model mapper adapter for mobx-rest",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/emrahtoy/mobx-rest-auto-mapper-adapter"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:clean": "rimraf lib",
+    "build:lib": "babel ./src --out-dir lib --extensions \".ts,.tsx\" --ignore '**/__tests__/**'",
+    "build": "yarn lint && yarn check-types && yarn build:clean && yarn build:lib",
+    "prepublish": "yarn build",
+    "lint": "eslint --ext .ts --cache src/",
+    "check-types": "tsc"
+  },
+  "keywords": ["mobx", "mobx-rest", "model mapper","auto mapper"],
+  "author": "Emrah TOY <code@emrahtoy.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "eslint": "^6.4.0",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.3"
+  }
+}
