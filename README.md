@@ -19,7 +19,7 @@ This mapper also used for jest tests as is.
 
 **Example :**
 ```js
-import modelMapper from "mobx-rest;
+import modelMapper from "mobx-rest";
 import { BasicModelMapper } from "./mobx-rest-auto-mapper-adapter";
 
 const adapter = modelMapper(new BasicModelMapper());
@@ -50,7 +50,7 @@ This mapper can produce any type of class that given in return of Api to Model m
 
 **Example :**
 ```js
-import modelMapper from "mobx-rest;
+import modelMapper from "mobx-rest";
 import { AutoModelMapper } from "./mobx-rest-auto-mapper-adapter";
 
 const adapter = modelMapper(new AutoModelMapper());
