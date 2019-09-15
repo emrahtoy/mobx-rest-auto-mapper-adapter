@@ -16,7 +16,12 @@
     "lint": "eslint --ext .ts --cache src/",
     "check-types": "tsc"
   },
-  "keywords": ["mobx", "mobx-rest", "model mapper","auto mapper"],
+  "keywords": [
+    "mobx",
+    "mobx-rest",
+    "model mapper",
+    "auto mapper"
+  ],
   "author": "Emrah TOY <code@emrahtoy.com>",
   "license": "MIT",
   "devDependencies": {
